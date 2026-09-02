@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/31733064/README.md)
+
 # CAN_TestFrame_TOOL
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![PyQt5](https://img.shields.io/badge/GUI-PyQt5-green) ![Platform](https://img.shields.io/badge/平台-Windows-lightgrey) ![License](https://img.shields.io/badge/授权-仅供个人免费使用-orange)
 
