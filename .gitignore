@@ -3,6 +3,7 @@
 
 # Allowed files (root)
 !.gitignore
+!/README.md
 !/IOenum.txt
 !/BEBG can debug msg_202600723_V01.xlsx
 !/生成规则.md
@@ -15,7 +16,4 @@
 !/CanIOEnumTool/logo_cat.png
 !/CanIOEnumTool/logo_cat.ico
 !/CanIOEnumTool/CAN_TestFrame_TOOL使用说明书.html
-!/CanIOEnumTool/README.md
 !/CanIOEnumTool/生成规则.md
-!/CanIOEnumTool/docs
-!/CanIOEnumTool/docs/**
