@@ -1,0 +1,221 @@
+typedef enum
+{
+/*MUX1*/
+    SI_J131_Clutch_H_IN                 = 0U,//OK
+    SI_J132_MLS_AUTO_IN                 = 1U,//OK
+    SI_J122_Sport_Mode_IN               = 2U,//OK
+    SI_J130_MLS_DIPPED_BEAM_IN          = 3U,//OK
+    SI_J109_MAIN_BEAM_IN                = 4U,//OK
+    SI_J102_KL50_FB_IN                  = 5U,//OK
+    SI_J108_KL15_1_FB_IN                = 6U,//OK
+    SI_J107_KL75_FB_IN                  = 7U,//OK
+
+/*MUX2*/
+    SI_J405_DRV_HANDLE_SW_UNLOCK_IN     = 8U,//OK
+    SI_J404_PASS_HANDLE_SW_UNLOCK_IN    = 9U,//OK
+    SI_J403_PASS_HANDLE_SW_LOCK_IN      = 10U,//OK
+    SI_J401_ADB_IN                      = 11U,//OK
+    SI_J402_DRV_HANDLE_SW_LOCK_IN       = 12U,//OK
+
+/*MUX3*/
+    SI_J121_FRONT_WIPER_INT_AUTO_IN     = 13U,//OK
+    SI_J113_FRONT_WIPER_HIGH_IN         = 14U,//OK
+    SI_J110_REAR_WIPER_IN               = 15U,//OK
+    SI_J116_FRONT_WIPER_LOW_IN          = 16U,//OK
+     
+    SI_J103_Auto_Light_AD0_IN           = 17U,//LIGHT
+    SI_J103_Auto_Light_AD1_IN           = 18U,
+    SI_J103_Auto_Light_AD2_IN           = 19U,
+
+    SI_J123_Other_Door_lock_IN          = 20U,//OK
+
+
+/*MUX4*/
+    SI_J149_CRUISE_CONTROL1_GRAND_IN    = 21U,
+    SI_J149_CRUISE_CONTROL1_INT0_IN     = 22U,//OK
+    SI_J149_CRUISE_CONTROL1_INT1_IN     = 23U,//OK
+    SI_J149_CRUISE_CONTROL1_INT2_IN     = 24U,//OK
+    
+    SI_J145_WIPER_INT0_IN               = 25U,//OK
+    SI_J145_WIPER_INT1_IN               = 26U,//OK
+    SI_J145_WIPER_INT2_IN               = 27U,//OK
+    SI_J145_WIPER_INT3_IN               = 28U,//OK
+    SI_J145_WIPER_INT4_IN               = 29U,//OK
+
+    SI_J105_CRUISE_CONTROL2_GND_IN      = 30U,
+    SI_J105_CRUISE_CONTROL2_INT0_IN     = 31U,//OK
+    SI_J105_CRUISE_CONTROL2_INT1_IN     = 32U,//OK
+    SI_J105_CRUISE_CONTROL2_INT2_IN     = 33U,//OK
+    SI_J105_CRUISE_CONTROL2_INT3_IN     = 34U,//OK
+    SI_J105_CRUISE_CONTROL2_INT4_IN     = 35U,//OK
+
+    SI_J124_FRONT_WASH_IN               = 36U,//OK
+    SI_J106_CV_PLG_IN                   = 37U,//OK
+
+/*MUX5*/
+    SI_J221_FRONT_WIPER_PARK_IN         = 38U,//OK
+    SI_J207_DRIVER_DOOR_LOCK_IN         = 39U,//OK
+    SI_J213_BRAKE_LAMP_IN               = 40U,//OK
+    SI_J219_WIN_INHIBIT_IN              = 41U,//OK
+
+
+    SI_J205_PASS_WINDOW_DRV_AD0_IN      = 42U,//OK
+    SI_J205_PASS_WINDOW_DRV_AD1_IN      = 43U,//OK
+    SI_J205_PASS_WINDOW_DRV_AD2_IN      = 44U,//OK
+    SI_J205_PASS_WINDOW_DRV_AD3_IN      = 45U,//OK
+
+    SI_J238_CDL_MASTER_LOCK_IN          = 46U,//OK
+    SI_J238_CDL_MASTER_UNLOCK_IN        = 47U,//OK  
+
+    SI_J222_RR_WINDOW_DRV_AD0_IN        = 48U,
+    SI_J222_RR_WINDOW_DRV_AD1_IN        = 49U,
+    SI_J222_RR_WINDOW_DRV_AD2_IN        = 50U,
+    SI_J222_RR_WINDOW_DRV_AD3_IN        = 51U,
+
+
+    SI_J233_RL_WINDOW_DRV_AD0_IN        = 52U,//OK
+    SI_J233_RL_WINDOW_DRV_AD1_IN        = 53U,//OK
+    SI_J233_RL_WINDOW_DRV_AD2_IN        = 54U,//OK
+    SI_J233_RL_WINDOW_DRV_AD3_IN        = 55U,//OK
+
+/*MUX6*/
+    SI_J204_TRUNK_RELEASE_EXT_IN        = 56U,//OK
+    SI_J201_DOOR_AJAR_RL_IN             = 57U,//OK
+    SI_J202_AJAR_RR_IN                  = 58U,//OK
+    SI_J203_BONNET_AJAR_IN              = 59U,//OK
+    SI_J245_REVERSE_GEAR_SW_IN          = 60U,//OK
+    SI_J227_DOOR_AJAR_PASS_IN           = 61U,//OK
+    SI_J240_DOOR_AJAR_TRUNK_IN          = 62U,//OK
+    SI_J239_DOOR_AJAR_DRV_IN            = 63U,//OK
+
+/*MUX7*/
+    SI_J406_ECO_IN                      = 64U,//OK
+    SI_J414_RIGHT_TURN_LAMP_Feedback_IN = 65U,//OK
+    SI_J244_Rear_WIPER_PARK_IN          = 66U,//OK
+    
+/*MUX8*/
+    SI_J504_Clutch_L_IN                 = 67U,//OK
+    SI_J502_OSRVM_FOLD_UNFOLD_IN        = 68U,//OK
+    SI_J503_Left_Turn_Lamp_Feedback_IN  = 69U,//OK
+    SI_J501_REAR_WIPER_INT_IN           = 70U,//OK
+
+/*MUX9*/
+    SI_J138_REAR_WASH_IN                = 71U,//OK
+    SI_J150_FRONT_FOG_LAMP_IN           = 72U,//OK
+    SI_J126_JREAR_DEMIST_IN             = 73U,//OK
+    SI_J137_REAR_FOG_LAMP_IN            = 74U,//OK
+    SI_J133_TURN_L_IN                   = 75U,//OK
+    SI_J147_MLS_POSITION_IN             = 76U,//OK
+    SI_J146_HAZARD_IN                   = 77U,//OK
+    SI_J134_TURN_R_IN                   = 78U,//OK
+
+/*MCU*/
+    SI_J237_POST_IMPACT_SIGNAL_IN       = 79U,//
+    SI_J232_NA_IN                       = 80U,//NO USE
+    SI_J226_Wheel_Speed_IN              = 81U,
+    
+    SI_J408_SSB_1_IN                    = 82U,
+    SI_J409_SSB_2_IN                    = 83U,
+          
+    NUM_OF_INPUTS,
+
+    SIS_4_DOOR_AJAR_IN,
+    SIS_6_DOOR_AJAR_IN,
+    SIS_IGN_IN,
+     
+} INPUTS_ENUM;
+
+typedef enum
+{
+
+    SO_J310_MIRROR_FOLD_OUT             = 0u,           
+    SO_HSD_DEN_3_OUT                    = 1u,                
+    SO_HSD_DEN_2_OUT                    = 2u,              
+    SO_J517_FRONT_POSITION_LAMPS_OUT    = 3u, 
+    SO_J518_DRL_POS_CONTROL_OUT         = 4u,       
+    SO_J431_KL15_2_REALY_OUT            = 5u,         
+    SO_J415_KL15_1_RELAY_OUT            = 6u,         
+    SO_VBAT_SWITCH_OUT                  = 7u,             
+       
+    SO_J312_CDL_TRUNK_MOTOR_OUT         = 8u,        
+    SO_4851_B_OUT                       = 9u,                    
+    SO_CS_S_MCU_OUT                     = 10u,                    
+       
+    SO_HSD_DEN_5_OUT                    = 11u,                 
+    SO_HSD_DEN_4_OUT                    = 12u,                   
+    SO_J211_REAR_FOG_LAMPS_OUT          = 13u,       
+    SO_J223_WELCOME_LIGHT_OUT           = 14u,         
+    SO_J224_TURN_LAMPS_L_OUT            = 15u,           
+       
+    SO_4851_A_OUT                       = 16u,                     
+    SO_4851_C_OUT                       = 17u,                     
+    SO_BACKUP_SW_OUT                    = 18u,                  
+       
+    SO_J127_IP_ILLUM_OUT                = 19u,            
+    SO_J225_BRAKE_CHMSL_OUT             = 20u,          
+    SO_J313_GND_Washer_OUT              = 21u,            
+    SO_J311_Rear_Washer_OUT             = 22u,          
+    SO_J148_Reserved_OUT                = 23u,           
+    SO_J135_HAZARD_SW_INDI_OUT          = 24u,      
+    SO_J429_KL50_RELAY_OUT              = 25u,           
+    SO_J411_WELCOME_LIGHT_OUT           = 26u,
+    
+    SO_VBAT_WAKE_OUT                    = 27u,                
+    SO_J151_SECURITY_TELLTALE_OUT       = 28u,
+    SO_J112_WIN_INHIBIT_IND_OUT         = 29u,
+    SO_J111_CDL_LOCKING_TELLTALE_OUT    = 30u,
+    SO_CS_LSD_1_OUT                     = 31u,               
+    SO_IC_ENABLE_OUT                    = 32u,            
+    SO_J316_REAR_POSITION_LAMPS_OUT     = 33u,   
+    SO_J320_CDL_UNLOCK_MOTORS_OUT       = 34u,     
+    SO_CS_LSD_2_OUT                     = 35u,           
+    SO_J318_CDL_LOCK_MOTORS_OUT         = 36u,      
+       
+    SO_J236_REVERSE_LAMPS_OUT           = 37u,         
+    SO_J248_BRAKE_LAMP_OUT              = 38u,           
+    SO_J235_TURN_LAMPS_R_OUT            = 39u,          
+    SO_J432_KL75_RELAY_OUT              = 40u,            
+    SO_HSD_DEN_1_OUT                    = 41u,                  
+    SO_LIMPHOME_OUT                     = 42u,                    
+    SO_HSD_SEL_OUT                      = 43u,                     
+    
+    SO_CS_HB_OUT                        = 44u,                      
+    SO_J514_Wiping_Enable_OUT           = 45u,  
+    SO_J304_MIRROR_UNFOLD_OUT           = 46u,          
+    SO_J209_KL50_Relay_LSD_OUT          = 47u,         
+    SO_J210_FOOT_LAM_OUT                = 48u,               
+    SO_J305_DRL_RESERVE_OUT             = 49u,    
+    SO_J247_BATTERY_SAVER_OUT           = 50u,          
+    SO_J212_INTERIOR_LAMPS_OUT          = 51u,                   
+
+    SO_J216_REAR_DEMIST_TELLTALE_OUT    = 52u,  
+    SO_J229_ECO_OUT                     = 53u,                 
+    SO_J214_FRONT_DEMIST_RELAY_OUT      = 54u,    
+    SO_J140_REAR_DEFROST_OUT            = 55u,        
+    SO_J128_charger_enable_OUT          = 56u,        
+    SO_J230_SPORT_OUT                   = 57u,               
+    SO_J115_EPB_IND_OUT                 = 58u,               
+
+    SO_J228_REAR_WIPER_RELAY_OUT        = 59u,      
+    SO_J231_FRONT_WIPER_SPEED_RELAY_OUT = 60u,
+    SO_J217_FRONT_WIPER_POWER_RELAY_OUT = 61u,
+    SO_J241_DIPPED_BEAM_RELAY_OUT       = 62u,     
+    SO_J206_FRONT_FOG_R_RELAY_OUT       = 63u,     
+    SO_J243_FRONT_FOG_L_RELAY_OUT       = 64u,     
+    SO_J218_MAIN_BEAM_RELAY_OUT         = 65u,       
+    SO_J242_HORN_RELAY_OUT              = 66u,            
+
+    SO_J511_SSB_BACKLIGHT_OUT           = 67u,          
+    SO_J515_Wiping_Enable_OUT           = 68u,          
+    SO_J509_HEADLAMP_WAKEUP_OUT         = 69u,        
+    SO_J510_GREEN_LED_OUT               = 70u,              
+    SO_J512_ORANGE_LED_OUT              = 71u,  
+
+    SO_J215_Trunkligh_OUT               = 72u,
+    SO_J410_Trunk_Backlight_OUT         = 73u,
+    SO_LIN_SunRooFControl_OUT			= 74u,
+    SO_LIN_WindowInhibit_OUT			= 75u,
+
+    NUM_OF_OUTPUTS                     
+
+} OUTPUTS_ENUM;

@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# Allowed files (root)
+!.gitignore
+!/IOenum.txt
+!/BEBG can debug msg_202600723_V01.xlsx
+!/生成规则.md
+
+# Allowed files (CanIOEnumTool)
+!/CanIOEnumTool
+/CanIOEnumTool/*
+!/CanIOEnumTool/CAN_TestFrame.py
+!/CanIOEnumTool/CAN_TestFrame_TOOL.spec
+!/CanIOEnumTool/logo_cat.png
+!/CanIOEnumTool/logo_cat.ico
+!/CanIOEnumTool/CAN_TestFrame_TOOL使用说明书.html
